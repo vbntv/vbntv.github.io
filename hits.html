@@ -1,22 +1,31 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-<title>Хиты </title>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<script language="JavaScript" src="scripts/clock.js"></script>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Хиты</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
 
-    <div class="body">
-        <div id="trailer" class="is_overlay">
-            <video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
-                <source src="video/index.mp4"></source>
-                <source src="video/index.webm" type="video/webm"></source>
-            </video>
-        </div>
-        <div style="position:relative;" align="center">
+	<style>
+		body {
+			margin: 0;
+			margin-top: 0;
+		}
+		h1 {
+			margin-top: 0;
+			background: #0000FF;
+			padding: 10px;
+			color: #FFFFFF;
+		}
+	</style>
 
-            <div class="center">
+	<frameset rows="20%,*" cols="*" frameborder="0" border="0">
+		<frame src="menu.htm" name="headFrame" scrolling="no" noresize>
+		<frameset cols="30%,*">
+			<frame src="main.htm" name="leftFrame" scrolling="no" noresize>
+			<frame src="d1.htm" name="rightFrame">
+		</frameset>
+	</frameset>
                 <h1>Хиты</h1>
 
                 <p>
@@ -303,7 +312,7 @@ Something Just Like This
 
    
 
-    <div  class="menu1">
+    <div "background-color:black;" class="menu1">
         <div class="menu" onMouseOver="document.getElementById('main').src = 'img/main_after.png';"
              onMouseOut="document.getElementById('main').src = 'img/main_before.png';">
             <a href="index.html"><img id="main" src="img/main_before.png"></a>
