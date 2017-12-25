@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <script>
+            var default_color;
+            function mouseIn(aid) {
+                
+              default_color = document.getElementById(aid).style.background;
+              document.getElementById(aid).style.background = "white";
+            }
+            function mouseOut(aid) {
+              document.getElementById(aid).style.background = default_color;
+            }
+            function home(){top.frames['content'].location.href = 'home_content.html';}
+            function dos(){top.frames['content'].location.href = 'dos.html';}
+            function history(){top.frames['content'].location.href = 'history.html';}
+            function nt(){top.frames['content'].location.href = 'NT.html';}
+            function x(){top.frames['content'].location.href = '9x.html';}
+        </script>
+        <style>
+            img {
+                 border: 1px solid #e2e3e7;
+                 position: absolute;
+                 left:430px;
+                }
+            a.but{
+                -webkit-user-select: none;
+                position:absolute;
+                width: 40px;
+                height: 30px;
+                background: #12ade9;
+                padding: .2em 1.2em;
+                outline: none;
+                border: 1px solid #4c4c4c;
+                border-radius: 50px;
+                transition: all .518s ease 0s;  
+                font-family: Arial, Helvetica, sans-serif;
+                color: "red";
+            }
+            font{
+                font-size: 80%;
+                align-content: left;
+            }
+            a.but img{
+                border: none;
+                top:3px;
+                left:26px;
+            }
+            ul.hr {
+                margin: 0; /* Обнуляем значение отступов */
+                padding: 4px; /* Значение полей */
+				text-color:  white;
+				background-color:yellow;
+            }
+            ul.hr li {
+			text-color:  white;
+				background-color:yellow;
+                display: inline; /* Отображать как строчный элемент */
+                margin-right: 80px; /* Отступ слева */
+            }
+       </style>
+    </head>
+<body>
+    <p align="center">
+    
+        
+   
+	
+	<ul class="hr" align="center">   
+        <li style="color:white"><a onclick="home()"target="content">Run DMC</a>
+           
+        
+    </ul>
+    </p>
+</body>
+</html>
